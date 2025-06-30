@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Register | Receipt Manager</title>
+    <link rel="stylesheet" href="login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"/>
+</head>
+<body class="pixel-ui">
+
+<div class="container login-container">
+    <h1 class="title">📝 Create Your Vault</h1>
+
+    <form id="registerForm" class="form-box">
+        <label for="email">📧 Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+
+        <label for="password">🔑 Password</label>
+        <input type="password" id="password" placeholder="Create password" required />
+
+        <button type="submit" class="btn-pixel">✨ Register</button>
+
+        <p class="switch-link">
+            Already have an account? <a href="login.html">Login here</a>
+        </p>
+
+        <p id="registerResponse" class="response-msg"></p>
+    </form>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

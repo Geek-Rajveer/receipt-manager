@@ -1,0 +1,71 @@
+body.pixel-ui {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #9fc3d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #cde5f7;
+  border: 2px dashed #ffeaa7;
+  padding: 1.8rem;
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 5px 5px 0 #888888;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #2d3436;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.45rem;
+  border: 2px solid #b2bec3;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.btn-pixel {
+  background-color: #fab1a0;
+  color: #2d3436;
+  border: 2px solid #d35400;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 60%;
+  margin: 0.8rem auto 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.btn-pixel:hover {
+  background-color: #f8a58d;
+}
+
+.switch-link {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.response-msg {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: green;
+}

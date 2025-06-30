@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>📄 Receipt Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="theme-toggle">
+    <button onclick="toggleTheme()">🌓</button>
+</div>
+
+<div class="container">
+    <h1><span class="pixel-heart">❤️</span> Receipt Manager</h1>
+
+    <!-- 🔐 Logout Button -->
+    <div class="logout-bar">
+        <button id="logoutBtn" class="btn-pixel logout-button">🚪 Logout</button>
+    </div>
+
+    <form id="receiptForm">
+        <div class="form-group">
+            <label>Product Name</label>
+            <input type="text" id="productName" required />
+        </div>
+        <div class="form-group">
+            <label>Store Name</label>
+            <input type="text" id="storeName" required />
+        </div>
+        <div class="form-group">
+            <label>Purchase Date</label>
+            <input type="date" id="purchaseDate" required />
+        </div>
+        <div class="form-group">
+            <label>Warranty (Months)</label>
+            <input type="number" id="warrantyMonths" required />
+        </div>
+        <div class="form-group">
+            <label>Notes</label>
+            <textarea id="notes"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Receipt Image (optional)</label>
+            <input type="file" id="receiptImage" accept="image/*" hidden />
+            <label for="receiptImage" class="custom-upload-btn">📎 Choose Image</label>
+            <div id="imagePreview" class="image-preview"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">➕ Add Receipt</button>
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <h2>📋 All Receipts</h2>
+    <table id="receiptTable">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Store</th>
+            <th>Purchase</th>
+            <th>Warranty</th>
+            <th>Expires</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Injected by JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
